@@ -7,7 +7,7 @@
 		<h2 align='center'>JSON Object looping</h2>
 
       <script language = "javascript" >
-       var JSONStr = '{"name":"Milon", "age":30,"employed":true, "city":"Dhaka", "car": null}';
+       var JSONStr = '{"name":"Milon", "age":30,"employed":true, "city":"Dhaka", "car": null, "country":"BD"}';
 	   var JSONObj = JSON.parse(JSONStr);
         for (let x in JSONObj) {
 		document.write("<h4 align='center'>"+x+": "+ JSONObj[x] +"</h4>");  
