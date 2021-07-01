@@ -1,0 +1,66 @@
+<html>
+   <head>
+      <title>Creation of array object in javascript using JSON</title>
+		
+      <script language = "javascript" >
+
+         document.writeln("<h2 align='center'>JSON array object</h2>");
+
+      var prodects = { "books" : [       
+              { "id":"01", "language": "Java","edition": "third","author": "Author1"},
+              { "id":"02","language": "JavaScript","edition": "second","author": "Author2"},
+              { "id":"03","language": "JSON","edition": "second","author": "Author3"},
+              { "id":"04","language": "Android","edition": "second","author": "Author4"}],
+              
+               "softwares" : [       
+              { "id":"01", "name": "Software1","language": "Java","version": "1.1.0"},
+              { "id":"02","name": "Software2","language": "C#","version": "1.0"},
+              { "id":"03","name": "Software3","language": "Android","version": "1.0.1"},
+              { "id":"04","name": "Software4","language": "PHP","version": "1.0.0"}],
+              
+               "employees" : [       
+              { "fName":"Milon", "lName": "Sheikh","age": 30, "address" : {
+                                                                          "city": "Dhaka",  
+                                                                          "country": "Bangladesh"}},
+             { "fName":"Masud", "lName": "Rana","age": 31, "address" : {
+                                                                        "city": "Dhaka",  
+                                                                        "country": "Bangladesh"}}]   
+                                 
+         }  
+
+            document.writeln("<h4 align='center'>Books</h4>");
+            document.writeln("<table border = '1' width = 50% align='center'>");
+                   document.writeln("<tr><th><b>ID</b></th><th><b>Lnguage</b></th><th><b>Edition</b></th><th><b>Author</b></th></tr>");
+             for(i = 0;i<prodects.books.length;i++){  
+                      document.writeln("<tr><th><b>"+ prodects.books[i].id+"</b></th><th><b>"+ prodects.books[i].language+"</b></th><th><b>"+ prodects.books[i].edition+"</b></th><th><b>"+ prodects.books[i].author+"</b></th></tr>");
+                      	
+              }                    
+            document.writeln("</table>");
+
+
+            document.writeln("<h4 align='center'>Softwares</h4>");
+            document.writeln("<table border = '1' width = 50% align='center'>");
+                   document.writeln("<tr><th><b>ID</b></th><th><b>Name</b></th><th><b>Language</b></th><th><b>Veasion</b></th></tr>");
+             for(i = 0;i<prodects.softwares.length;i++){  
+                      document.writeln("<tr><th><b>"+ prodects.softwares[i].id+"</b></th><th><b>"+ prodects.softwares[i].name+"</b></th><th><b>"+ prodects.softwares[i].language+"</b></th><th><b>"+ prodects.softwares[i].version+"</b></th></tr>");
+                      	
+              }                    
+            document.writeln("</table>");
+            document.writeln("</table>");
+
+            document.writeln("<h4 align='center'>Employees</h4>");
+            document.writeln("<table border = '1' width = 50% align='center'>");
+                   document.writeln("<tr><th><b>Friest Name</b></th><th><b>Last Name</b></th><th><b>Age</b></th><th><b>Address</b></th></tr>");
+             for(i = 0;i<prodects.employees.length;i++){  
+                      document.writeln("<tr><th><b>"+ prodects.employees[i].fName+"</b></th><th><b>"+prodects.employees[i].lName+"</b></th><th><b>"+ prodects.employees[i].age+"</b></th><th><b>City: "+ prodects.employees[i].address.city+"<br>Country: "+ prodects.employees[i].address.country+"</b></th></tr>");
+                      	
+              }                    
+            document.writeln("</table>");
+      </script>
+
+   </head>
+	
+   <body>
+   </body>
+	
+</html>
