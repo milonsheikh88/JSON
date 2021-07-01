@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Parsing JSON String</title>
+ </head
+
+<body>
+
+<h2 align='center'>Parsing JSON String</h2>
+
+<script language = "javascript" >
+var objectTxt = '{"name":"Milon Sheikh", "age":30, "city":"Dhaka"}'
+var obj = JSON.parse(objectTxt);
+
+var arrayTxt = '[ "Ford", "BMW", "Audi", "Fiat" ]';
+var array = JSON.parse(arrayTxt);
+
+document.write("<h4 align='center'>Name: "+obj.name+"</h4>");  
+document.write("<h4 align='center'>Age: "+obj.age+"</h4>");  
+document.write("<h4 align='center'>City: "+obj.city+"</h4>");  
+document.write("<h4 align='center'>Care: "+array[1]+"</h4>");  
+
+</script>
+
+</body>
+</html>
