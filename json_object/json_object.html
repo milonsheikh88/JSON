@@ -4,21 +4,16 @@
 	
       <script language = "javascript" >
 
-         var JSONObj = { "name" : "Milon","age":30, "employed": true, car: null,
-		 "address" : {  
-         "area": "Banasree",  
-         "city": "Dhaka"},
-		 "mobile": ["Mobile No One", "Mobile No Two"]  
-		 };
+          var myJSONStr = '{"name":"Milon","age":30,"employed":true,"car":["Ford", "BMW", "Fiat"],"address" :{"area": "Banasree","city": "Dhaka"}}';
+		  var JSONObj = JSON.parse(myJSONStr);
 		
          document.write("<h1 align='center'>Creating JSON Object with JavaScript</h1>");
          document.write("<br>");
          document.write("<h4 align='center'>Name: "+JSONObj.name+"</h4>");  
          document.write("<h4 align='center'>Age: "+JSONObj.age+"</h4>"); 
          document.write("<h4 align='center'>Employed: "+JSONObj.employed+"</h4>"); 
-         document.write("<h4 align='center'>Car: "+JSONObj.car+"</h4>"); 
+         document.write("<h4 align='center'>Car: "+JSONObj.car[1]+"</h4>"); 
          document.write("<h4 align='center'>City: "+JSONObj.address.city+"</h4>"); 
-         document.write("<h4 align='center'>Mobile: "+JSONObj.mobile[1]+"</h4>"); 
 
 
       </script>
